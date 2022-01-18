@@ -7,5 +7,5 @@ class AppUser(models.Model):
     
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     avatarURL = models.CharField(max_length=50)
-    userTypeID = models.ForeignKey(UserType, on_delete=models.DO_NOTHING, related_name='types')
+    userType = models.ForeignKey(UserType, on_delete=models.DO_NOTHING, related_name='types')
     firstTimeUser = models.CharField(max_length=5)

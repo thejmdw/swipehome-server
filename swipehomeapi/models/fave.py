@@ -5,8 +5,8 @@ from .house import House
 
 class Fave(models.Model):
     
-    userId = models.ForeignKey(AppUser, on_delete=models.DO_NOTHING)
-    houseId = models.ForeignKey(House, on_delete=models.DO_NOTHING)
+    app_user = models.ForeignKey(AppUser, on_delete=models.DO_NOTHING)
+    house = models.ForeignKey(House, null=True, on_delete=models.DO_NOTHING)
     property_id = models.CharField(max_length=25)
     address = models.CharField(max_length=50)
     city = models.CharField(max_length=50)

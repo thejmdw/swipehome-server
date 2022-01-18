@@ -3,8 +3,8 @@
         "model": "swipehomeapi.fave",
         "pk": 1,
         "fields": {
-            "userId": 2,
-            "houseId": 1,
+            "app_user": 2,
+            "house": 1,
             "address": "4500 Tennessee Ave",
             "city": "chattanooga",
             "state_code": "TN",
@@ -20,7 +20,7 @@
         "model": "swipehomeapi.fave",
         "pk": 2,
         "fields": {
-            "userId": 2,
+            "app_user": 2,
             "property_id": "R8853739898",
             "address": "709 Old Dallas Rd",
             "city": "Chattanooga",
@@ -35,9 +35,9 @@
     },
     {
         "model": "swipehomeapi.fave",
-        "pk": 2,
+        "pk": 3,
         "fields": {
-            "userId": 2,
+            "app_user": 2,
             "property_id": "R7910974713",
             "address": "1302 Worthington St",
             "city": "Chattanooga",
@@ -52,9 +52,9 @@
     },
     {
         "model": "swipehomeapi.fave",
-        "pk": 3,
+        "pk": 4,
         "fields": {
-            "userId": 2,
+            "app_user": 2,
             "property_id": "R8853739898",
             "address": "709 Old Dallas Rd",
             "city": "Chattanooga",
@@ -69,9 +69,9 @@
     },
     {
         "model": "swipehomeapi.fave",
-        "pk": 4,
+        "pk": 5,
         "fields": {
-            "userId": 2,
+            "app_user": 2,
             "property_id": "R7478646553",
             "address": "1024 Garnett Ave",
             "city": "Chattanooga",

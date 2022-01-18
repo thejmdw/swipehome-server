@@ -5,7 +5,7 @@
         "fields": {
             "user": 2,
             "avatarURL": "https://i.pravatar.cc/150?u=SwipeHome User",
-            "userTypeID": 1,
+            "userType": 1,
             "firstTimeUser": true
         }
     },
@@ -15,7 +15,7 @@
         "fields": {
             "user": 3,
             "avatarURL": "https://i.pravatar.cc/150?u=SwipeHomeAgent",
-            "userTypeID": 3,
+            "userType": 3,
             "firstTimeUser": false
         }
     }
