@@ -1,23 +1,23 @@
 [
     {
-        "model": "swipehomeapi.user_type",
+        "model": "swipehomeapi.usertype",
         "pk": 1,
         "fields": {
             "type": "Renter"
         }
     },
     {
-        "model": "swipehomeapi.user_type",
+        "model": "swipehomeapi.usertype",
         "pk": 2,
         "fields": {
             "type": "Buyer"
         }
     },
     {
-        "model": "swipehomeapi.user_type",
+        "model": "swipehomeapi.usertype",
         "pk": 3,
         "fields": {
             "type": "Agent"
         }
-    },
+    }
 ]

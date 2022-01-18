@@ -3,16 +3,52 @@
         "model": "auth.user",
         "pk": 1,
         "fields": {
-            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "password": "pbkdf2_sha256$320000$lQbrXRiymgJHcDfwDNAdtv$jv1Rl8bfH4PV5BUUSqmdcLvGUu3W9mUZRKCDQPPEIUE=",
+            "last_login": null,
+            "is_superuser": true,
+            "username": "thejmdw",
+            "first_name": "",
+            "last_name": "",
+            "email": "thejmdw@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-01-18 04:55:48.434753",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$QzVLLrHFWWonZPSRsZXr57$a7nb4iBVtSFZ9aPk6OgCAhmRL5U05No8V3j288Tvly8=",
             "last_login": null,
             "is_superuser": false,
-            "username": "me@me.com",
-            "first_name": "Steve",
-            "last_name": "Brownlee",
-            "email": "me@me.com",
+            "username": "user",
+            "first_name": "SwipeHome",
+            "last_name": "User",
+            "email": "user@swipehome.com",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2020-08-28T14:51:39.989Z",
+            "date_joined": "2022-01-18 03:33:48.989000",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$wvqPYJdyYe3A7n5NPYl0um$98fpJM0wH8ge9bxxhdxsWpvbGKZ4pMGwq0e6QhbyV6M=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "agent",
+            "first_name": "SwipeHome",
+            "last_name": "Agent",
+            "email": "agent@swipehome.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-01-18 03:34:04.989000",
             "groups": [],
             "user_permissions": []
         }

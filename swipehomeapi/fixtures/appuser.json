@@ -1,0 +1,22 @@
+[
+    {
+        "model": "swipehomeapi.appuser",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "avatarURL": "https://i.pravatar.cc/150?u=SwipeHome User",
+            "userTypeID": 1,
+            "firstTimeUser": true
+        }
+    },
+    {
+        "model": "swipehomeapi.appuser",
+        "pk": 2,
+        "fields": {
+            "user": 3,
+            "avatarURL": "https://i.pravatar.cc/150?u=SwipeHomeAgent",
+            "userTypeID": 3,
+            "firstTimeUser": false
+        }
+    }
+]

@@ -3,22 +3,22 @@
         "model": "swipehomeapi.search",
         "pk": 1,
         "fields": {
-            "userId": 12,
+            "userId": 2,
             "city": "chattanooga",
             "state_code": "TN",
             "postal_code": "37405",
-            "userTypeId": 1,
+            "userTypeId": 1
         }
     },
     {
         "model": "swipehomeapi.search",
         "pk": 2,
         "fields": {
-            "userId": 12,
+            "userId": 2,
             "city": "chattanooga",
             "state_code": "TN",
             "postal_code": "37409",
-            "userTypeId": 1,
+            "userTypeId": 1
         }
-    },
+    }
 ]

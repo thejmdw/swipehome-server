@@ -9,8 +9,8 @@
         {
             "previewLimit": 50,
             "driver": "SQLite",
-            "database": "swipehome.db",
-            "name": "swipehomeapi"
+            "name": "swipehome",
+            "database": "db.sqlite3"
         }
     ],
 }

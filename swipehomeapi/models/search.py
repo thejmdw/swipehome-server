@@ -1,6 +1,6 @@
 from django.db import models
-from .app_user import AppUser
-from .user_type import UserType
+from .appuser import AppUser
+from .usertype import UserType
 
 class Search(models.Model):
     
