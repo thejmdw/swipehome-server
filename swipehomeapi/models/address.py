@@ -1,4 +1,5 @@
 from django.db import models
+from .house import House
 
 class Address(models.Model):
     
