@@ -1,0 +1,12 @@
+[
+    {
+        "model": "swipehomeapi.address",
+        "pk": 1,
+        "fields": {
+            "line": "4500 Tennessee Ave",
+            "city": "chattanooga",
+            "state_code": "TN",
+            "postal_code": "37409"
+        }
+    }
+]
