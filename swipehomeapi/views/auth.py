@@ -57,7 +57,7 @@ def register_user(request):
     )
 
     # Now save the extra info in the swipehomeapi_app_user table
-    customer = AppUser.objects.create(
+    app_user = AppUser.objects.create(
         avatarURL=request.data['avatarURL'],
         userType=UserType.objects.get(pk=request.data['userType']),
         firstTimeUser=request.data['firstTimeUser'],
@@ -65,7 +65,7 @@ def register_user(request):
     )
 
     # Use the REST Framework's token generator on the new user account
-    token = Token.objects.create(user=customer.user)
+    token = Token.objects.create(user=app_user.user)
     # Return the token to the client
     data = { 'token': token.key }
     return Response(data)
