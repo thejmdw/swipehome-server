@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
-from swipehomeapi.models import AppUser
+from swipehomeapi.models import AppUser, UserType
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -59,6 +59,8 @@ def register_user(request):
     # Now save the extra info in the swipehomeapi_app_user table
     customer = AppUser.objects.create(
         avatarURL=request.data['avatarURL'],
+        userType=UserType.objects.get(pk=request.data['userType']),
+        firstTimeUser=request.data['firstTimeUser'],
         user=new_user
     )
 
