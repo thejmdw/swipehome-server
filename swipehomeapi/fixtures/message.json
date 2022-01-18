@@ -1,0 +1,13 @@
+[
+    {
+        "model": "swipehomeapi.message",
+        "pk": 1,
+        "fields": {
+            "userId": 1,
+            "recipientId": 2,
+            "text": "I'm interested in viewing this house. When is it available for showing?",
+            "timestamp": 1641422528092,
+            "unread": false,
+        }
+    },
+]
