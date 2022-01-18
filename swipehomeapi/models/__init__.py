@@ -6,3 +6,4 @@ from .message import Message
 from .house import House
 from .address import Address
 from .photo import Photo
+from .housephoto import HousePhoto

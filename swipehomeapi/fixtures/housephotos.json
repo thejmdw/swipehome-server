@@ -1,0 +1,10 @@
+[
+    {
+        "model": "swipehomeapi.housephoto",
+        "pk": 1,
+        "fields": {
+            "house": 1,
+            "photo": 1
+        }
+    }
+]

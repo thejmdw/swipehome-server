@@ -3,8 +3,7 @@
         "model": "swipehomeapi.photo",
         "pk": 1,
         "fields": {
-            "href": "https://res.cloudinary.com/thejmdw/image/upload/v1641420770/w9frj6vaionuilio3mnb.jpg",
-            "house": 1
+            "href": "https://res.cloudinary.com/thejmdw/image/upload/v1641420770/w9frj6vaionuilio3mnb.jpg"
         }
     }
 ]

@@ -7,7 +7,7 @@ class Fave(models.Model):
     
     app_user = models.ForeignKey(AppUser, on_delete=models.DO_NOTHING)
     house = models.ForeignKey(House, null=True, on_delete=models.DO_NOTHING)
-    property_id = models.CharField(max_length=25)
+    property_id = models.CharField(null=True, max_length=25)
     address = models.CharField(max_length=50)
     city = models.CharField(max_length=50)
     state_code = models.CharField(max_length=2)
