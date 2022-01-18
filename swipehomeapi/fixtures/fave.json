@@ -1,0 +1,87 @@
+[
+    {
+        "model": "swipehomeapi.fave",
+        "pk": 1,
+        "fields": {
+            "userId": 12,
+            "houseId": 6,
+            "address": "4500 Tennessee Ave",
+            "city": "chattanooga",
+            "state_code": "TN",
+            "postal_code": "37409",
+            "beds": 3,
+            "baths": 2,
+            "price": 2000,
+            "photo": "https://res.cloudinary.com/thejmdw/image/upload/v1641420770/w9frj6vaionuilio3mnb.jpg",
+            "timeStamp": 1641422786959,
+        }
+    },
+    {
+        "model": "swipehomeapi.fave",
+        "pk": 2,
+        "fields": {
+            "userId": 12,
+            "property_id": "R8853739898",
+            "address": "709 Old Dallas Rd",
+            "city": "Chattanooga",
+            "state_code": "TN",
+            "postal_code": "37405",
+            "beds": 3,
+            "baths": 2,
+            "price": 1699,
+            "photo": "https://ar.rdcpix.com/02089b0cf0649918a1ce95392fe20793l-f2547316145s.jpg",
+            "timeStamp": 1641525880691,
+                }
+    },
+    {
+        "model": "swipehomeapi.fave",
+        "pk": 2,
+        "fields": {
+            "userId": 12,
+            "property_id": "R7910974713",
+            "address": "1302 Worthington St",
+            "city": "Chattanooga",
+            "state_code": "TN",
+            "postal_code": "37405",
+            "beds": 3,
+            "baths": 2,
+            "price": 1850,
+            "photo": "https://ar.rdcpix.com/c434f49145a484a3e99a5423939d8a17l-f3134513715s.jpg",
+            "timeStamp": 1641525875941,
+                }
+    },
+    {
+        "model": "swipehomeapi.fave",
+        "pk": 3,
+        "fields": {
+            "userId": 12,
+            "property_id": "R8853739898",
+            "address": "709 Old Dallas Rd",
+            "city": "Chattanooga",
+            "state_code": "TN",
+            "postal_code": "37405",
+            "beds": 3,
+            "baths": 2,
+            "price": 1699,
+            "photo": "https://ar.rdcpix.com/02089b0cf0649918a1ce95392fe20793l-f2547316145s.jpg",
+            "timeStamp": 1641525880691,
+                }
+    },
+    {
+        "model": "swipehomeapi.fave",
+        "pk": 4,
+        "fields": {
+            "userId": 12,
+            "property_id": "R7478646553",
+            "address": "1024 Garnett Ave",
+            "city": "Chattanooga",
+            "state_code": "TN",
+            "postal_code": "37405",
+            "beds": 3,
+            "baths": 1,
+            "price": 1800,
+            "photo": "https://ar.rdcpix.com/6cee27676a6482666e269a6361e3d02dl-f2081940911s.jpg",
+            "timeStamp": 1641525886357,
+                }
+    },
+]
