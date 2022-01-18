@@ -1,0 +1,19 @@
+[
+    {
+        "model": "swipehomeapi.house",
+        "pk": 1,
+        "fields": {
+            "address": 1,
+            "photos": [
+                {
+                    "href": "https://res.cloudinary.com/thejmdw/image/upload/v1641420770/w9frj6vaionuilio3mnb.jpg"
+                }
+            ],
+            "price": 2000,
+            "beds": 3,
+            "baths_full": 2,
+            "userTypeId": 1,
+            "userId": 2, 
+        }
+    },
+]
