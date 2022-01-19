@@ -45,5 +45,5 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ('user', 'avatarURL', 'userType')
+        fields = ('user', 'avatarURL', 'userType', 'firstTimeUser')
 
