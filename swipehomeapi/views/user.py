@@ -18,7 +18,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
             view_name='user',
             lookup_field = 'id'
         )
-        fields = ('id', 'url', 'username', 'password', 'first_name', 'last_name', 'email', 'is_active', 'date_joined', 'is_staff')
+        fields = ('id', 'username', 'first_name', 'last_name', 'email', 'is_active', 'date_joined', 'is_staff')
 
 
 class Users(ViewSet):

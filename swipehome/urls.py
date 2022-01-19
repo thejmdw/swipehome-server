@@ -19,10 +19,11 @@ from django.conf.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
-from swipehomeapi.views import register_user, login_user, Users
+from swipehomeapi.views import register_user, login_user, Users, Profile
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', Users, 'user')
+router.register(r'profile', Profile, 'profile')
 
 
 urlpatterns = [
