@@ -11,7 +11,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from swipehomeapi.models import Search, AppUser
+from swipehomeapi.models import Search, AppUser, UserType
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 class UserSerializer(serializers.ModelSerializer):
@@ -45,50 +45,50 @@ class Searches(ViewSet):
     """Categories for products"""
     # permission_classes = (IsAuthenticatedOrReadOnly,)
 
-    # def create(self, request):
-    #     """Handle POST operations
+    def create(self, request):
+        """Handle POST operations
 
-    #     Returns:
-    #         Response -- JSON serialized product type instance
-    #     """
-    #     new_search = Search()
-    #     new_search.city = request.data["city"]
-    #     new_search.state_code = request.data["state_code"]
-    #     new_search.postal_code = request.data["postal_code"]
-    #     new_search.app_user = AppUser.objects.get(app_user=request.data["app_user"])
-    #     new_search.userType = request.data["userType"]
-    #     new_search.save()
+        Returns:
+            Response -- JSON serialized product type instance
+        """
+        new_search = Search()
+        new_search.city = request.data["city"]
+        new_search.state_code = request.data["state_code"]
+        new_search.postal_code = request.data["postal_code"]
+        new_search.app_user = AppUser.objects.get(user=request.data["app_user"])
+        new_search.userType = UserType.objects.get(pk=request.data["userType"])
+        new_search.save()
 
-    #     serializer = SearchSerializer(new_search, context={'request': request})
+        serializer = SearchSerializer(new_search, context={'request': request})
 
-    #     return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-    # def update(self, request, pk=None):
-    #     """
-    #     @api {PUT} /products/:id PUT changes to product
-    #     @apiName UpdateProduct
-    #     @apiGroup Product
+    def update(self, request, pk=None):
+        """
+        @api {PUT} /products/:id PUT changes to product
+        @apiName UpdateProduct
+        @apiGroup Product
 
-    #     @apiHeader {String} Authorization Auth token
-    #     @apiHeaderExample {String} Authorization
-    #         Token 9ba45f09651c5b0c404f37a2d2572c026c146611
+        @apiHeader {String} Authorization Auth token
+        @apiHeaderExample {String} Authorization
+            Token 9ba45f09651c5b0c404f37a2d2572c026c146611
 
-    #     @apiParam {id} id Product Id to update
-    #     @apiSuccessExample {json} Success
-    #         HTTP/1.1 204 No Content
-    #     """
+        @apiParam {id} id Product Id to update
+        @apiSuccessExample {json} Success
+            HTTP/1.1 204 No Content
+        """
         
 
 
-    #     search = Search.objects.get(pk=pk)
-    #     search.city = request.data["city"]
-    #     search.state_code = request.data["state_code"]
-    #     search.postal_code = request.data["postal_code"]
-    #     search.app_user = AppUser.objects.get(app_user=request.data["app_user"])
-    #     search.userType = request.data["userType"]
-    #     search.save()
+        search = Search.objects.get(pk=pk)
+        search.city = request.data["city"]
+        search.state_code = request.data["state_code"]
+        search.postal_code = request.data["postal_code"]
+        search.app_user = AppUser.objects.get(app_user=request.data["app_user"])
+        search.userType = request.data["userType"]
+        search.save()
 
-    #     return Response({}, status=status.HTTP_204_NO_CONTENT)
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
 
     def retrieve(self, request, pk=None):
         """Handle GET requests for single search"""
