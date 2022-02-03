@@ -3,7 +3,7 @@
         "model": "swipehomeapi.search",
         "pk": 1,
         "fields": {
-            "app_user": 2,
+            "app_user": 1,
             "city": "chattanooga",
             "state_code": "TN",
             "postal_code": "37405",
