@@ -5,7 +5,7 @@ from rest_framework.decorators import action
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from swipehomeapi.models import Search, AppUser
+from swipehomeapi.models import AppUser
 
 
 class Profile(ViewSet):
@@ -18,8 +18,6 @@ class Profile(ViewSet):
             Response -- JSON representation of user info and events
         """
         app_user = AppUser.objects.get(user=request.auth.user)
-    
-
         # events = EventSerializer(
         #     events, many=True, context={'request': request})
         app_user = AppUserSerializer(
@@ -37,7 +35,6 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('first_name', 'last_name', 'username')
-
 
 class AppUserSerializer(serializers.ModelSerializer):
     """JSON serializer for app_users"""
