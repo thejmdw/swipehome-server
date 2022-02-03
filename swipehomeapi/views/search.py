@@ -114,28 +114,28 @@ class Searches(ViewSet):
             search, many=True, context={'request': request})
         return Response(serializer.data)
 
-    # def destroy(self, request, pk=None):
-    #     """
-    #     @api {DELETE} /products/:id DELETE product
-    #     @apiName DeleteProduct
-    #     @apiGroup Product
+    def destroy(self, request, pk=None):
+        """
+        @api {DELETE} /products/:id DELETE product
+        @apiName DeleteProduct
+        @apiGroup Product
 
-    #     @apiHeader {String} Authorization Auth token
-    #     @apiHeaderExample {String} Authorization
-    #         Token 9ba45f09651c5b0c404f37a2d2572c026c146611
+        @apiHeader {String} Authorization Auth token
+        @apiHeaderExample {String} Authorization
+            Token 9ba45f09651c5b0c404f37a2d2572c026c146611
 
-    #     @apiParam {id} id Product Id to delete
-    #     @apiSuccessExample {json} Success
-    #         HTTP/1.1 204 No Content
-    #     """
-    #     try:
-    #         search = Search.objects.get(pk=pk)
-    #         search.delete()
+        @apiParam {id} id Product Id to delete
+        @apiSuccessExample {json} Success
+            HTTP/1.1 204 No Content
+        """
+        try:
+            search = Search.objects.get(pk=pk)
+            search.delete()
 
-    #         return Response({}, status=status.HTTP_204_NO_CONTENT)
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-    #     except Search.DoesNotExist as ex:
-    #         return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+        except Search.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
-    #     except Exception as ex:
-    #         return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except Exception as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
